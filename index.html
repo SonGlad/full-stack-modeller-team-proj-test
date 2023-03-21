@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/flower-team-proj/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="We are flower-studio you can buy flowers"/>
+    <title>Flower Studio</title>
+
+    <!-- croll-to-top Favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/flower-team-proj/assets/apple-touch-icon-f28c6a45.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAwoUFAmj1X9zAAAC30lEQVRIx9XTX2jVdRgG8M/5nbOds46+m2wubckaimCZhakEI6XWXSFYkBcWeBWJ0b+V3UUXBVlkeBFdyRISBG+iiIUEXlkQ3Uhl+K/Jtqa2YcfThsfjdn5duLRtnrGbiN7L53m/7/O+7/N9+a8jMz8dkNTJStXILUBkt8dNzUGzjvp4YQXW23pbfIyFFfjNKZNz0JyRhe5gscJtyYo/FyD/r0fmZqPhbh0CJYOGVCjfGqOgU6dw3UUDRqXlvwsEWQ/YpscqLRpQNeYHB3ytCoqe8JwNWjVITRjwlT6nbwhkosNLdmqXuuKScQ2Wapc17kPvqbjHO55WMG5YSaPl7pQ44y1HTJVl4imfKvjOEd8aUZFo86iXrVGx2zf6PKbssENOmZDTrscu9yt5xUHE4tgfL0Zz3JgVIcRDcSrSOBFfRBoXY0fkZrCroj/SGIwNQbMoRBIzNhtC9EYatajFtdjdLGazq+OnSONgNNb9QLEpSpFGGseiJeayYlfU4kJsTOoafNkE+FJpNlWGfuctszk37XRWizZF2emcmhVyqPpDl2zMFci7pMu6TJDziB02Wa7gVkcZBRmpkmqdi2mW159T0Ot1LS47a8z1aTK1SLcmNcN1TyaVOJmJ5+3T5JB9zqlIb46w0jEdqrbrn+fop3JeUHRcr9HyP/BgSopGa3zuWrluhcS9OGZ0DtMwrbtVm3kikaA222f0WAo22jXXhRBNESEkfsUWrbOed+uVxbjEG15VnPnVtXrXfkvI5sNmndqczF/Jp3n5jFbbfeQOk5r0KVlji3WumshP5pN8kw5P2usZKx13LhNLfGCnxIDvDZqyzHr3GfS2PdZ602Hv26bRNcNGXFW0wl1yLtnrExUhmuO1+DEqkUYaadTi9/gsHoy2OBFp7AmxKJ6NozEWU9MZ1TgfB+LhGyeYIchot1aXcN0FJ51V1ahbs5+dAUUrrbZM3rghvxgyWd/a/1n8BbnX1gmXa4/DAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTAzLTEwVDIwOjIwOjA5KzAwOjAwPY6+5wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wMy0xMFQyMDoyMDowOSswMDowMEzTBlsAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="/>
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAwoUFAmj1X9zAAABRUlEQVQoz4XRP2hTARgE8N/Le+0zyvtIC6VWsa0gWMRRcHAoiIsgji7ioOAsigWLIA4OgruTUIKLW8XZQXFRIZ1chBbBP4iJaExoa02a5xIH6dDb7uPu4L5jFyT/0+Cw+eE18dXzbIflmMWhIPXay50JVTUDpURqy48kyEzZr/TFNwNUzSq0fNLvSOKUq44bGFFR99BJNx3QM6rhvrUkFk164qPMObc8Ne+Zx9pmLKi5IvLIAiEqUY8yHkQ65BPxIu5ltuQORoFtv/2xYloa0LfibBInXDdlU6k0Z8Yb3WHNUmE9iYZ37vqJvjuuueCVf98Z2K6Ys+xDp61tw7hRZ3Q1O01NLZt+pflF+7zNe2ouuaxr1rTP+cC48xY0kjjttqrv9ljTM+mRGw5ZN6KnbikJxhxVaHqvprBqryMmbFjVUu62tr/Oj15LxaPGHgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMy0xMFQyMDoyMDowOSswMDowMD2OvucAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDMtMTBUMjA6MjA6MDkrMDA6MDBM0wZbAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"/>
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi4vYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLAogICAgICAgICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICAgICAgICAgICJ0eXBlIjogImltYWdlL3BuZyIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgInNyYyI6ICIuL2FuZHJvaWQtY2hyb21lLTUxMng1MTIucG5nIiwKICAgICAgICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICAgICAgfQogICAgXSwKICAgICJ0aGVtZV9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiLAogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQo=" />
+    <link rel="mask-icon" href="/flower-team-proj/assets/safari-pinned-tab-cb3161ad.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Base Styles -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@500;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+
+    <!-- Js delivery slick -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- ===Store JS=== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css" integrity="sha512-ka1/Z+PCN6JAoOVT50Ujjhq74r3hE0r433lM5X3VlLmxXRRkAJIPSXiZlccGx6Syd56QW+rPoYaLHm5iIPthLg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script type="module" crossorigin src="/flower-team-proj/assets/index-f7daed8e.js"></script>
+    <link rel="stylesheet" href="/flower-team-proj/assets/index-0a4d38cb.css">
+  </head>
+
+  <body>
+
+    <!-- Modals -->
+
+    <div class="backdrop js-backdrop-modal">
+      <div class="store-modal modal" data-modal="1">
+  <div class="modal-store-content">
+    <button type="button" class="store-modal-btn-close js-modal-close">
+      <svg class="modal-closed-icon" width="18" height="18">
+        <use href="/flower-team-proj/assets/icons-c06ad47e.svg#akar-icons_cross"></use>
+      </svg>
+    </button>
+    <h3 class="store-modal-title">Contact us</h3>
+    <p class="store-modal-txt">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+
+    <form>
+      <label class="title-of-form style-for-name" for="user_name_store">
+        <div class="icon-position">
+          <input
+            class="store-name-field input-js"
+            type="text"
+            pattern="[a-zA-Z0-9]+"
+            name="user_name"
+            id="user_name_store"
+            placeholder="Kristin Watson"
+            required
+          />
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons email-icon blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-name-form title-of-form">Name</span>
+        </div>
+      </label>
+      <label class="title-of-form style-for-email" for="user_email_store">
+        <div class="icon-position">
+          <input
+            class="store-email-field input-js"
+            name="user-email"
+            id="user_email_store"
+            type="email"
+            placeholder="tanya.hill@example.com"
+            required
+          />
+
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons email-icon blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-email-form title-of-form">Email</span>
+        </div>
+      </label>
+      <button
+        class="btn-common store-modal-btn js-open-modal button-js"
+        type="submit"
+        data-modal="2"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+      <div class="thank-u-modal modal" data-modal="2">
+  <button type="button" class="thank-modal-btn-close js-modal-close">
+    <svg class="modal-closed-icon" width="24" height="24">
+      <use href="/flower-team-proj/assets/icons-c06ad47e.svg#akar-icons_cross"></use>
+    </svg>
+  </button>
+  <div class="thank-modal-content">
+    <div class="container-for-img-thank">
+      <svg class="icon-thank-modal" width="188" height="142">
+        <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-Frame-48"></use>
+      </svg>
+    </div>
+    <h3 class="thank-modal-title">Thank you!</h3>
+    <p class="thank-modal-txt">
+      We have received your contact details and will reach you soon.
+    </p>
+    <button
+      type="button"
+      class="btn-common thank-modal-btn js-modal-close js-thank-modal-btn"
+    >
+      Continue
+    </button>
+  </div>
+</div>
+
+      <div class="blog-modal modal" data-modal="3">
+  <button type="button" class="blog-modal-btn-close js-modal-close">
+    <svg class="modal-closed-icon" width="18" height="18">
+      <use href="/flower-team-proj/assets/icons-c06ad47e.svg#akar-icons_cross"></use>
+    </svg>
+  </button>
+  <div class="container-bg-img">
+    <picture>
+      <source
+        media="(min-width:1280px)"
+        srcset="/flower-team-proj/assets/blog-modal-img-desc-1x-08a131cb.png , /flower-team-proj/assets/blog-modal-img-desc-2x-436dd2b6.png "
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="/flower-team-proj/assets/blog-modal-img-tab-1x-600b5335.png , /flower-team-proj/assets/blog-modal-img-tab-1x-600b5335.png "
+      />
+      <source
+        media="(max-width:767px)"
+        srcset="/flower-team-proj/assets/blog-modal-img-mob-1x-6e8eb68b.png , /flower-team-proj/assets/blog-modal-img-mob-2x-875d5a86.png "
+      />
+      <img
+        src="/flower-team-proj/assets/blog-modal-img-mob-1x-6e8eb68b.png"
+        alt="a beautiful bouquet of flowers"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <div class="modal-blog-content">
+    <h3 class="title-blog-modal">Follow to our newsletter</h3>
+    <p class="txt-blog-modal">
+      Be the first to get exclusive offers and the latest news on our product
+      directly in your box.
+    </p>
+
+    <form>
+      <label class="title-of-form-two style-for-email" for="user_email_blog">
+        <div class="icon-position">
+          <input
+            class="blog-modal-field"
+            type="email"
+            name="user_email"
+            id="user_email_blog"
+            placeholder="Your email"
+            required
+          />
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-email-form-two">Email</span>
+        </div>
+      </label>
+      <button
+        class="btn-common blog-modal-btn js-modal-close"
+        type="submit"
+        id="user-email-blog"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
+
+    </div>
+    <button
+  class="js-open-modal team-open-button button-team-modal button--alt animate__animated backInUp"
+  data-modal="4"
+>
+  <svg
+    viewBox="0 0 200 200"
+    width="200"
+    height="200"
+    xmlns="http://www.w3.org/2000/svg"
+    class="link__svg"
+    aria-labelledby="link2-title link2-desc"
+  >
+    <title id="link2-title">You are wonderful, now click this</title>
+    <desc id="link2-desc">
+      A rotating link with text placed around a circle, with a cloud/flower
+      shape around it, and a smiley face inside
+    </desc>
+
+    <path
+      id="link-circle-alt"
+      class="link__path"
+      d="M 35, 100 a 65,65 0 1,1 130,0 a 65,65 0 1,1 -130,0"
+      stroke="none"
+      fill="none"
+    />
+
+    <path
+      class="link__cloud"
+      d="M88.964,9.111C89.997,4.612 94.586,0.999 100,0.999C105.413,0.999 110.002,4.612 111.036,9.111C113.115,4.991 118.435,2.581 123.692,3.878C128.948,5.172 132.54,9.78 132.466,14.393C135.472,10.891 141.214,9.824 146.008,12.341C150.801,14.855 153.185,20.189 152.01,24.651C155.766,21.968 161.597,22.307 165.648,25.899C169.7,29.488 170.741,35.235 168.53,39.286C172.818,37.583 178.4,39.307 181.474,43.761C184.551,48.217 184.183,54.047 181.068,57.451C185.641,56.823 190.646,59.834 192.567,64.894C194.486,69.955 192.735,75.529 188.895,78.09C193.486,78.573 197.626,82.693 198.278,88.067C198.93,93.441 195.898,98.433 191.556,100C195.898,101.567 198.93,106.56 198.278,111.934C197.626,117.307 193.486,121.427 188.895,121.91C192.735,124.472 194.486,130.045 192.567,135.106C190.646,140.167 185.641,143.177 181.068,142.549C184.183,145.954 184.551,151.783 181.474,156.239C178.4,160.693 172.818,162.418 168.53,160.712C170.741,164.766 169.7,170.512 165.648,174.102C161.597,177.691 155.766,178.032 152.01,175.349C153.185,179.812 150.801,185.145 146.008,187.66C141.214,190.176 135.472,189.109 132.466,185.607C132.54,190.221 128.948,194.828 123.692,196.123C118.435,197.419 113.115,195.009 111.036,190.889C110.002,195.388 105.413,199.001 100,199.001C94.586,199.001 89.997,195.388 88.964,190.889C86.884,195.009 81.564,197.419 76.307,196.123C71.051,194.828 67.461,190.221 67.533,185.607C64.529,189.109 58.785,190.176 53.992,187.66C49.2,185.145 46.815,179.812 47.989,175.349C44.233,178.032 38.402,177.691 34.351,174.102C30.299,170.512 29.259,164.766 31.469,160.712C27.181,162.418 21.599,160.693 18.525,156.239C15.449,151.783 15.816,145.954 18.931,142.549C14.359,143.177 9.353,140.167 7.434,135.106C5.513,130.045 7.264,124.472 11.104,121.91C6.514,121.427 2.374,117.307 1.722,111.934C1.07,106.56 4.103,101.567 8.443,100C4.103,98.433 1.07,93.441 1.722,88.067C2.374,82.693 6.514,78.573 11.104,78.09C7.264,75.529 5.513,69.955 7.434,64.894C9.353,59.834 14.359,56.823 18.931,57.451C15.816,54.047 15.449,48.217 18.525,43.761C21.599,39.307 27.181,37.583 31.469,39.286C29.259,35.235 30.299,29.488 34.351,25.899C38.402,22.307 44.233,21.968 47.989,24.651C46.815,20.189 49.2,14.855 53.992,12.341C58.785,9.824 64.529,10.891 67.533,14.393C67.461,9.78 71.051,5.172 76.307,3.878C81.564,2.581 86.884,4.991 88.964,9.111Z"
+      fill="none"
+    />
+
+    <g class="link__face">
+      <path d="M 95 102 Q 100 107 105 102" fill="none" />
+      <ellipse class="" cx="90" cy="100" rx="2" ry="2" stroke="none" />
+      <ellipse class="" cx="110" cy="100" rx="2" ry="2" stroke="none" />
+      <ellipse class="" cx="100" cy="100" rx="35" ry="35" fill="none" />
+    </g>
+
+    <text class="link__text">
+      <textPath href="#link-circle-alt" stroke="none">
+        • you are wonderful • now click this
+      </textPath>
+    </text>
+  </svg>
+</button>
+
+<div class="team-modal-container modal" data-modal="4">
+  <button class="team-modal-close js-modal-close">
+    <span class="leftright"></span>
+    <span class="rightleft"></span>
+    <span class="team-modal-label">close</span>
+  </button>
+  <strong class="modal-title"
+    >"IREX" - ми знаємо, як створити сайти, які працюють.</strong
+  >
+  <ul class="team-modal">
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="/flower-team-proj/assets/oleg-b1d174df.png"
+          class="team-modal-img"
+          alt="oleg photo"
+          width="150"
+        />
+      </div>
+      <h3 class="team-title">Олег <br />Кошевий</h3>
+      <p class="team-paragraph">Team Lead</p>
+    </li>
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="/flower-team-proj/assets/vova-0c430e81.png"
+          class="team-modal-img"
+          alt="vova photo"
+          width="150"
+        />
+      </div>
+      <h1 class="team-title">Володимир Біліченко</h1>
+      <p class="team-paragraph">Scrum master</p>
+    </li>
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="data:image/png;base64,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"
+          class="team-modal-img"
+          alt="misha photo"
+          width="150"
+        />
+      </div>
+      <h3 class="team-title">Михайло <br />Міхєєнко</h3>
+      <p class="team-paragraph">Розробник</p>
+    </li>
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="/flower-team-proj/assets/dima-e1cb1223.png"
+          class="team-modal-img"
+          alt="dima photo"
+          width="150"
+        />
+      </div>
+      <h3 class="team-title">Дмитро <br />Пустоляков</h3>
+      <p class="team-paragraph">Розробник</p>
+    </li>
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="/flower-team-proj/assets/illya-cca99e9e.png"
+          class="team-modal-img"
+          alt="illya photo"
+          width="150"
+        />
+      </div>
+      <h3 class="team-title">Ілля <br />Палатов</h3>
+      <p class="team-paragraph">Розробник</p>
+    </li>
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="/flower-team-proj/assets/andrii-dfe65f4a.png"
+          class="team-modal-img"
+          alt="andrii photo"
+          width="150"
+        />
+      </div>
+      <h3 class="team-title">Андрій <br />Пізнюр</h3>
+      <p class="team-paragraph">Розробник</p>
+    </li>
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="/flower-team-proj/assets/anna-03bd36b2.png"
+          class="team-modal-img"
+          alt="anna photo"
+          width="150"
+        />
+      </div>
+      <h3 class="team-title">Анна <br />Тимошик</h3>
+      <p class="team-paragraph">Розробник</p>
+    </li>
+    <li class="team-modal-item">
+      <div class="img-wrapper">
+        <img
+          src="/flower-team-proj/assets/sasha-f6d3f129.png"
+          class="team-modal-img"
+          alt="sasha photo"
+          width="150"
+        />
+      </div>
+      <h3 class="team-title">Олександр<br />Рик</h3>
+      <p class="team-paragraph">Розробник</p>
+    </li>
+  </ul>
+  <p class="modal-desc">
+    Команда "IREX" дякує GoIT за чудовий курс з HTML & CSS!
+  </p>
+</div>
+
+    
+    <!--Header  -->
+
+    <header class="header" id="header">
+  <div class="container container-header header-js header-bg">
+    <a class="header-link-logo" aria-label="logo" href="./index.html">
+      <svg class="logo-header" width="45" height="35">
+        <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-mobile_logo"></use>
+      </svg>
+    </a>
+    <nav class="page-nav">
+      <ul class="menu">
+        <li class="menu-item">
+          <a class="header-link current" href="#hero-section">Anemone</a>
+        </li>
+        <li class="menu-item">
+          <a class="header-link current" href="#about-section">About us</a>
+        </li>
+        <li class="menu-item">
+          <a class="header-link current" href="#store-section">Store</a>
+        </li>
+        <li class="menu-item">
+          <a class="header-link current" href="#delivery-section">Delivery</a>
+        </li>
+        <li class="menu-item">
+          <a class="header-link current" href="#blog-section">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <address class="call">
+      <a href="tel:+380631234567">
+        <svg class="phone-icon" width="20" height="20">
+          <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-mob_tel"></use>
+        </svg>
+      </a>
+    </address>
+    <button
+      type="button"
+      class="mobile-menu-open js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="mobile-menu-burger" width="24" height="24">
+        <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+    <!-- Main Five -->
+
+    <main>
+      <section class="hero-section" id="hero-section">
+  <div class="container hero-container">
+    <h1 class="page-title" style="--shift-to-y: -355px">Anemone</h1>
+    <h2
+      class="hero-badge"
+      style="--shift-from-x: 0; --shift-to-x: -90px; --shift-to-y: 170px"
+    >
+      flower studio
+    </h2>
+    <img
+      srcset="/flower-team-proj/assets/hero-img-mobile-ee58f53d.png 145w, /flower-team-proj/assets/hero-img-mobile@2x-8a3d2ec0.png 290w, /flower-team-proj/assets/hero-img-tablet-55eb97fa.png 390w, /flower-team-proj/assets/hero-img-tablet@2x-a05be8ce.png 670w"
+      sizes="(min-width:768px) 390px,(max-width:767px) 145px, 100vw"
+      class="hero-image_adaptive"
+      src="./img/hero/image_home_page.png"
+      alt="Flower on a grey background"
+      width="145"
+    />
+
+    <button
+      class="hero-button js-open-modal"
+      data-modal="1"
+      aria-label="button-shop-now"
+      type="button"
+      style="--shift-from-x: 0; --shift-to-x: 25px; --shift-to-y: 170px"
+    >
+      <svg width="76" height="76" class="hero-button-svg hero-icons">
+        <use
+          href="/flower-team-proj/assets/icons-c06ad47e.svg#hero-icon-arrow"
+          class="hero-icon-arrow hero-btn-arrow"
+        ></use>
+        <use
+          href="/flower-team-proj/assets/icons-c06ad47e.svg#hero-btn-text"
+          class="hero-icon-text hero-icons hero-btn-txt"
+        ></use>
+      </svg>
+      <svg width="145" height="150" class="hero-button-svg_tablet">
+        <use
+          href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-tab_btn_text"
+          class="hero-icon-text_tablet hero-btn-txt"
+        ></use>
+        <use
+          href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-tab_btn_errow"
+          class="hero-icon-arrow_tablet hero-btn-arrow"
+        ></use>
+      </svg>
+      <svg class="hero-button-svg_desk hero-icons" width="166" height="166">
+        <use
+          href="/flower-team-proj/assets/icons-c06ad47e.svg#hero-icon-arrow"
+          class="hero-btn-arrow"
+        ></use>
+        <use
+          href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-pc_btn_text"
+          class="hero-btn-txt"
+        ></use>
+      </svg>
+    </button>
+    <div class="img-transition">
+      <img
+        srcset="/flower-team-proj/assets/hero-img-fc873295.jpg 1280w, /flower-team-proj/assets/hero-img@2x-9c92ebec.jpg 2560w"
+        sizes="(min-width:1280px) 1280px, 100vw"
+        src="/flower-team-proj/assets/hero-img-fc873295.jpg"
+        alt="Flower on a grey background"
+        class="hero-image"
+        width="1283"
+      />
+    </div>
+  </div>
+</section>
+
+      <section class="section-about" id="about-section">
+    <div class="container">
+      <h2 class="title-common title-about">ABOUT</h2>
+      <div class="all-in-about">
+        <div>
+          <p class="common-text txt-about">
+            We are a minimalistic flower studio. We love people and flowers.
+            Therefore, every day we give people the beauty and joy creating
+            stylish and modern masterpieces. Every bouquet we create is unique as
+            you are.
+          </p>
+        </div>
+        <div class="img-about">
+          <picture>
+            <source
+              media="(min-width:1280px)"
+              srcset="/flower-team-proj/assets/image_about_desk_1x-117dfa23.png 1x, /flower-team-proj/assets/image_about_desk_2x-398c8975.png 2x"/>
+            <source
+              media="(min-width:768px)"
+              srcset="/flower-team-proj/assets/image_about_tab_1x-34f9455b.png 1x, /flower-team-proj/assets/image_about_tab_2x-02f1f4cf.png 2x"/>
+            <source
+              media="(max-width:767px)"
+              srcset="/flower-team-proj/assets/image_about_mob_1x-b67002fe.png 1x, /flower-team-proj/assets/image_about_mob_2x-5af4fc4f.png 2x"/>
+            <img
+              src="/flower-team-proj/assets/image_about_mob_1x-b67002fe.png"
+              alt="two beautiful pink flowers"
+              loading="lazy"/>          
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section class="store-section" id="store-section">
+  <div class="container store-container">
+    <h2 class="title-common store-title">Store</h2>
+    <ul class="store-list gallery">
+      <li class="store-item">
+        <a class="store-link" href="./img/store/img1_600.png">
+          <img
+            class="store-item-img"
+            srcset="/flower-team-proj/assets/img1_136-ed82363e.png 320w, /flower-team-proj/assets/img1_272-08ffeaa5.png 640w, /flower-team-proj/assets/img1_344-e9481391.png 468w, /flower-team-proj/assets/img1_600-acf2f814.png 1200w, /flower-team-proj/assets/img1_688-2ac4fd28.png 936w, /flower-team-proj/assets/img1_1200-070ca6d9.png 2400w"
+            sizes="(min-width: 1200px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+            src="/flower-team-proj/assets/img1_1200-070ca6d9.png"
+            alt="Compliments"
+            width="600"
+            loading="lazy"
+          />
+        </a>
+        <div class="store-content">
+          <div class="store-line">
+            <h3 class="store-item-name">compliments</h3>
+          </div>
+          <p class="store-item-desc">from &#36;15</p>
+        </div>
+      </li>
+      <li class="store-item">
+        <a class="store-link" href="./img/store/img2_600.png">
+          <img
+            class="store-item-img"
+            srcset="/flower-team-proj/assets/img2_136-ae1cc13c.png 320w, /flower-team-proj/assets/img2_272-1974a9a5.png 640w, /flower-team-proj/assets/img2_344-3d0584cd.png 468w, /flower-team-proj/assets/img2_600-ac547b51.png 1200w, /flower-team-proj/assets/img2_688-b92d69c0.png 936w, /flower-team-proj/assets/img2_1200-579ee7ef.png 2400w"
+            sizes="(min-width: 1200px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+            src="/flower-team-proj/assets/img2_1200-579ee7ef.png"
+            alt="Bouquets size S"
+            width="600"
+            loading="lazy"
+          />
+        </a>
+        <div class="store-content">
+          <div class="store-line">
+            <h3 class="store-item-name">bouquets size S</h3>
+          </div>
+          <p class="store-item-desc">from &#36;25</p>
+        </div>
+      </li>
+      <li class="store-item">
+        <a class="store-link" href="./img/store/img3_600.png">
+          <img
+            class="store-item-img"
+            srcset="/flower-team-proj/assets/img3_136-8686518a.png 320w, /flower-team-proj/assets/img3_272-a77edf1e.png 640w, /flower-team-proj/assets/img3_344-d7db9843.png 468w, /flower-team-proj/assets/img3_600-dccc2c89.png 1200w, /flower-team-proj/assets/img3_688-614ed30f.png 936w, /flower-team-proj/assets/img3_1200-eecdb996.png 2400w"
+            sizes="(min-width: 1200px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+            src="/flower-team-proj/assets/img3_1200-eecdb996.png"
+            alt="Bouquets size M"
+            width="600"
+            loading="lazy"
+          />
+        </a>
+        <div class="store-content">
+          <div class="store-line">
+            <h3 class="store-item-name">bouquets size M</h3>
+          </div>
+          <p class="store-item-desc">from &#36;45</p>
+        </div>
+      </li>
+      <li class="store-item">
+        <a class="store-link" href="./img/store/img4_600.png">
+          <img
+            class="store-item-img"
+            srcset="/flower-team-proj/assets/img4_136-881a4555.png 320w, /flower-team-proj/assets/img4_272-7008a0fd.png 640w, /flower-team-proj/assets/img4_344-150beda3.png 468w, /flower-team-proj/assets/img4_600-0dc12ec5.png 1200w, /flower-team-proj/assets/img4_688-be32babe.png 936w, /flower-team-proj/assets/img4_1200-973a8dff.png 2400w"
+            sizes="(min-width: 1200px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+            src="/flower-team-proj/assets/img4_1200-973a8dff.png"
+            alt="Bouquets size L"
+            width="600"
+            loading="lazy"
+          />
+        </a>
+        <div class="store-content">
+          <div class="store-line">
+            <h3 class="store-item-name">bouquets size L</h3>
+          </div>
+          <p class="store-item-desc">from &#36;60</p>
+        </div>
+      </li>
+    </ul>
+    <button
+      class="btn-common store-btn js-open-modal"
+      type="submit"
+      data-modal="1"
+    >
+      Order Flowers
+    </button>
+  </div>
+</section>
+
+      <section class="delivery-section" id="delivery-section">
+  <div class="container delivery-container">
+    <h2 class="title-common">DELIVERY</h2>
+    <ul class="delivery-list">
+      <li class="delivery-items">
+        <h3 class="number">1</h3>
+        <p class="delivery-text">
+          Choose your bouquet and make an order on website
+        </p>
+      </li>
+      <li class="delivery-items">
+        <h3 class="number">2</h3>
+        <p class="delivery-text">
+          Wait for the call to clarify the details of the order. You can pay
+          online or to the courier
+        </p>
+      </li>
+      <li class="delivery-items">
+        <h3 class="number">3</h3>
+        <p class="delivery-text">
+          Wait for the delivery at the selected time or pick up the order from
+          the store
+        </p>
+      </li>
+      <li class="delivery-items">
+        <h3 class="number">4</h3>
+        <p class="delivery-text">Make someone happy or enjoy yourself</p>
+      </li>
+    </ul>
+    <picture class="delivery-picture">
+      <source
+        media="(min-width:1280px)"
+        srcset="/flower-team-proj/assets/desc@1x-3c7f5810.jpg 1x, /flower-team-proj/assets/desc@2x-2cd86ff3.jpg 2x"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="/flower-team-proj/assets/tab@1x-886e0e46.jpg 1x, /flower-team-proj/assets/tab@2x-a6026260.jpg 2x"
+      />
+      <source
+        media="(min-width:480px)"
+        srcset="/flower-team-proj/assets/mob@1x-8bbe81c4.jpg 1x, /flower-team-proj/assets/mob@2x-6f2391c9.jpg 2x"
+      />
+      <img src="/flower-team-proj/assets/mob@1x-8bbe81c4.jpg" alt="delivery-flower" width="320" loading="lazy"/>
+    </picture>
+  </div>
+</section>
+
+      <!-- section Blog (start) -->
+
+<section class="blog" id="blog-section">
+  <div class="container">
+    <h2 class="title-common">Blog</h2>
+    <div class="flower-swipe">
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower1_136-cf6bdf4b.jpg 320w, /flower-team-proj/assets/flower1_272-f262e221.jpg 640w, /flower-team-proj/assets/flower1_344-4a85a212.jpg 468w, /flower-team-proj/assets/flower1_390-8ad9b19d.jpg 1200w, /flower-team-proj/assets/flower1_688-4e29c2bd.jpg 936w, /flower-team-proj/assets/flower1_780-b3ab7418.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower1_390-8ad9b19d.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower2_136-582d9d9a.jpg 320w, /flower-team-proj/assets/flower2_272-51918665.jpg 640w, /flower-team-proj/assets/flower2_344-99704a74.jpg 468w, /flower-team-proj/assets/flower2_390-f31b5666.jpg 1200w, /flower-team-proj/assets/flower2_688-bce91d4f.jpg 936w, /flower-team-proj/assets/flower2_780-ad513963.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower2_390-f31b5666.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower3_136-cafa01c0.jpg 320w, /flower-team-proj/assets/flower3_272-41b0bf6d.jpg 640w, /flower-team-proj/assets/flower3_344-babd8d86.jpg 468w, /flower-team-proj/assets/flower3_390-2ec87237.jpg 1200w, /flower-team-proj/assets/flower3_688-2c2e7e3e.jpg 936w, /flower-team-proj/assets/flower3_780-5fb00073.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower3_390-2ec87237.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower1_136-cf6bdf4b.jpg 320w, /flower-team-proj/assets/flower1_272-f262e221.jpg 640w, /flower-team-proj/assets/flower1_344-4a85a212.jpg 468w, /flower-team-proj/assets/flower1_390-8ad9b19d.jpg 1200w, /flower-team-proj/assets/flower1_688-4e29c2bd.jpg 936w, /flower-team-proj/assets/flower1_780-b3ab7418.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower1_390-8ad9b19d.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower2_136-582d9d9a.jpg 320w, /flower-team-proj/assets/flower2_272-51918665.jpg 640w, /flower-team-proj/assets/flower2_344-99704a74.jpg 468w, /flower-team-proj/assets/flower2_390-f31b5666.jpg 1200w, /flower-team-proj/assets/flower2_688-bce91d4f.jpg 936w, /flower-team-proj/assets/flower2_780-ad513963.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower1_390-8ad9b19d.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower3_136-cafa01c0.jpg 320w, /flower-team-proj/assets/flower3_272-41b0bf6d.jpg 640w, /flower-team-proj/assets/flower3_344-babd8d86.jpg 468w, /flower-team-proj/assets/flower3_390-2ec87237.jpg 1200w, /flower-team-proj/assets/flower3_688-2c2e7e3e.jpg 936w, /flower-team-proj/assets/flower3_780-5fb00073.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower1_390-8ad9b19d.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower1_136-cf6bdf4b.jpg 320w, /flower-team-proj/assets/flower1_272-f262e221.jpg 640w, /flower-team-proj/assets/flower1_344-4a85a212.jpg 468w, /flower-team-proj/assets/flower1_390-8ad9b19d.jpg 1200w, /flower-team-proj/assets/flower1_688-4e29c2bd.jpg 936w, /flower-team-proj/assets/flower1_780-b3ab7418.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower1_390-8ad9b19d.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower2_136-582d9d9a.jpg 320w, /flower-team-proj/assets/flower2_272-51918665.jpg 640w, /flower-team-proj/assets/flower2_344-99704a74.jpg 468w, /flower-team-proj/assets/flower2_390-f31b5666.jpg 1200w, /flower-team-proj/assets/flower2_688-bce91d4f.jpg 936w, /flower-team-proj/assets/flower2_780-ad513963.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower1_390-8ad9b19d.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+      <div class="flower-swipe-item">
+        <img
+          srcset="/flower-team-proj/assets/flower3_136-cafa01c0.jpg 320w, /flower-team-proj/assets/flower3_272-41b0bf6d.jpg 640w, /flower-team-proj/assets/flower3_344-babd8d86.jpg 468w, /flower-team-proj/assets/flower3_390-2ec87237.jpg 1200w, /flower-team-proj/assets/flower3_688-2c2e7e3e.jpg 936w, /flower-team-proj/assets/flower3_780-5fb00073.jpg 2400w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) 468px, (min-width: 480px) 320px, 100vw"
+          src="/flower-team-proj/assets/flower1_390-8ad9b19d.jpg"
+          alt="green flowers"
+          width="390"
+          height="421"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <div class="follow">
+      <p class="follow-text">Follow to our newsletter</p>
+      <button
+        type="button"
+        class="btn-common follow-btn js-open-modal"
+        data-modal="3"
+      >
+        Subscribe
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- section Blog (end) -->
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+  <div class="footer-studio container">
+    <div class="footer-logo-box">
+      <ul class="footer-nav-list footer-list-logo">
+        <li class="footer-logo">
+          <a href="#" aria-label="logo" class="footer-logo-anemone">
+            <svg class="footer-logo-link" width="73" height="57">
+              <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-big_logo"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navigator-menu">
+      <h3 class="footer-block-name">Navigation</h3>
+      <nav class="footer-block-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-link">
+            <a href="#hero-section" class="footer-nav-item">Anemone</a>
+          </li>
+          <li class="footer-nav-link">
+            <a href="#about-section" class="footer-nav-item">About us</a>
+          </li>
+          <li class="footer-nav-link">
+            <a href="#store-section" class="footer-nav-item">Store</a>
+          </li>
+          <li class="footer-nav-link">
+            <a
+              href="#delivery-section"
+              class="footer-nav-item last-footer-nav-item"
+              >Delivery</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="worker-time">
+      <h3 class="footer-block-name opening-times">Opening times</h3>
+      <p class="working-times">
+        Every day <br />
+        9:00 - 22:00
+      </p>
+    </div>
+    <div class="footer-contacts">
+      <h3 class="footer-block-name">Contacts</h3>
+      <ul class="footer-contact-list">
+        <li class="footer-tel">
+          <a href="tel:+380631234567">+38 063 123 45 67</a>
+        </li>
+        <li class="footer-mail">
+          <a href="mailto:anemonestudio@example.com"
+            >anemonestudio<br />@example.com</a
+          >
+        </li>
+        <li class="footer-adress">
+          <a class="address-link" href="https://www.google.com.ua/maps/place/ул.+Рейтарская,+11,+Киев,+02000/@50.4512141,30.5127936,19.25z/data=!4m6!3m5!1s0x40d4ce5bde74d21f:0x3ddb1fc45e18228!8m2!3d50.4512188!4d30.5126959!16s%2Fg%2F11c5fhwzrb?hl=ru" target="_blank" rel="noreferrer noopener"> 
+            Reitarska Street, 11<br /> Kyiv, Ukraine
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <ul class="social-networks list">
+        <li class="social-networks-item">
+          <a href="https://www.facebook.com" aria-label="icon-fb" class="social-networks-link link" target="_blank" rel="noreferrer noopener">
+            <svg class="social-networks-icon" width="28" height="28">
+              <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-networks-item">
+          <a href="https://www.instagram.com" aria-label="icon-inst" class="social-networks-link link" target="_blank" rel="noreferrer noopener">
+            <svg class="social-networks-icon" width="28" height="28">
+              <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Mobile Menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-close" width="24" height="24">
+      <use href="/flower-team-proj/assets/icons-c06ad47e.svg#icon-burger_close"></use>
+    </svg>
+  </button>
+
+  <nav class="page-nav-mobile">
+    <ul class="menu-mobile">
+      <li class="menu-item-mobile">
+        <a class="mobile-link js-select-menu-anemone" href="#hero-section">Anemone</a>
+      </li>
+      <li class="menu-item-mobile">
+        <a class="mobile-link js-select-menu" href="#about-section">About us</a>
+      </li>
+      <li class="menu-item-mobile">
+        <a class="mobile-link js-select-menu-store" href="#store-section">Store</a>
+      </li>
+      <li class="menu-item-mobile">
+        <a class="mobile-link js-select-menu-delivery" href="#delivery-section">Delivery</a>
+      </li>
+      <li class="menu-item-mobile">
+        <a class="mobile-link js-select-menu-blog" href="#blog-section">Blog</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <a href="#header" class="btn_scroll animate__animated slideInDown">
+  <svg class="scroll-button-svg" width="20" height="20">
+    <use href="/flower-team-proj/assets/icons-c06ad47e.svg#scroll-to-top_icon" class="scroll-button-icon"></use>
+  </svg>
+</a>
+
+
+    <!-- Base JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        easing: 'easeInOutQuart',
+      });
+    </script>
+    <!-- ===Store JS=== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js" integrity="sha512-IKDNPsyNuvwDr8D2nIcJVgNFuj3XXdV0jJ5S6E+nYwl5RiLxrd51TnDJDN1lQJrVdF4K849Lizr12ZCZV81MoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
