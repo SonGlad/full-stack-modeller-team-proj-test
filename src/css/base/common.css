@@ -2,6 +2,6 @@ body{
     height: 100%;
     font-family: Montserrat, Inter, sans-serif;
     font-weight: 400;
-    color: var(--color-black);
+    color: var(--color-grey);
     background-color: var(--color-white);
 }
