@@ -1,0 +1,24 @@
+.btn-common {
+    display: inline-block;
+    border: none;
+    border-radius: 38px;
+    background-color: var(--color-decor);
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    transition: background-color var(--main-trans)
+}
+
+.btn-common:hover{
+    background-color: var(--color-decor-hover);
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+    transition: background-color var(--main-trans), box-shadow var(--main-trans);
+}
+.btn-common:focus{
+    background-color: var(--color-decor-focus);
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+    transition: background-color var(--main-trans), box-shadow var(--main-trans);
+}

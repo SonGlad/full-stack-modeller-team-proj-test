@@ -1,0 +1,22 @@
+{
+  "name": "flower-team-proj",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/flower-team-proj/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "vite": "^4.0.0"
+  },
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}

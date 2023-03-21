@@ -1,0 +1,81 @@
+<div class="store-modal modal" data-modal="1">
+  <div class="modal-store-content">
+    <button type="button" class="store-modal-btn-close js-modal-close">
+      <svg class="modal-closed-icon" width="18" height="18">
+        <use href="./img/icons/icons.svg#akar-icons_cross"></use>
+      </svg>
+    </button>
+    <h3 class="store-modal-title">Contact us</h3>
+    <p class="store-modal-txt">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+
+    <form>
+      <label class="title-of-form style-for-name" for="user_name_store">
+        <div class="icon-position">
+          <input
+            class="store-name-field input-js"
+            type="text"
+            pattern="[a-zA-Z0-9]+"
+            name="user_name"
+            id="user_name_store"
+            placeholder="Kristin Watson"
+            required
+          />
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons email-icon blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-name-form title-of-form">Name</span>
+        </div>
+      </label>
+      <label class="title-of-form style-for-email" for="user_email_store">
+        <div class="icon-position">
+          <input
+            class="store-email-field input-js"
+            name="user-email"
+            id="user_email_store"
+            type="email"
+            placeholder="tanya.hill@example.com"
+            required
+          />
+
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons email-icon blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-email-form title-of-form">Email</span>
+        </div>
+      </label>
+      <button
+        class="btn-common store-modal-btn js-open-modal button-js"
+        type="submit"
+        data-modal="2"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>

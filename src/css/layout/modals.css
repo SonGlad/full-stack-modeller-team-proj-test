@@ -1,0 +1,35 @@
+.backdrop {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--main-trans), visibility var(--main-trans);
+}
+
+.backdrop.js-backdrop-modal{
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 150ms;
+}
+
+.modal {
+  transform: scale(0.75) translate(-65%, -65%);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--main-trans);
+}
+
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.active{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translate(-50%, -50%);
+}

@@ -1,0 +1,43 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+/* Utils */
+
+@import url('./utils/variable.css');
+@import url('./utils/vh.css');
+
+/* base */
+
+@import url('./base/reset.css');
+@import url('./base/common.css');
+
+/* Components */
+
+@import url('./components/container.css');
+@import url('./components/titels.css');
+@import url('./components/commontext.css');
+@import url('./components/buttons.css');
+
+/* layout */
+
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about.css');
+@import url('./layout/store.css');
+@import url('./layout/delivery.css');
+@import url('./layout/blog.css');
+@import url('./layout/footer.css');
+
+/* Mobile Menu + MODALS */
+
+@import url('./layout/mobile-menu.css');
+@import url('./layout/modal1.css');
+@import url('./layout/modal2.css');
+@import url('./layout/modal-blog.css');
+@import url('./layout/scroll-to-top.css');
+@import url('./layout/team-modal.css');
+@import url('./layout/modals.css');
