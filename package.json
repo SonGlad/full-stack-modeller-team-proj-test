@@ -1,11 +1,11 @@
 {
-  "name": "flower-team-proj",
+  "name": "full-stack-modeller-team-proj-test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/flower-team-proj/",
+    "build": "vite build --base=/full-stack-modeller-team-proj-test/",
     "preview": "vite preview"
   },
   "devDependencies": {
