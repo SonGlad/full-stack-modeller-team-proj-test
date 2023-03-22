@@ -17,7 +17,7 @@
 }
 .icon-training{
     
-    fill: #7D8897;
+    fill: var(--color-light-grey);
 }
 .our-training-li:not(:last-child){
     margin-bottom: 24px;
