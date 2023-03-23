@@ -1,8 +1,10 @@
 .section-tittle-training{
     text-align: center;
     width: 358px;
-    margin-top: 40px;
     margin-bottom: 32px;
+    font-weight: 700;
+    color: var(--color-black);
+
 }
 @media screen and (min-width:1200px) {
     .section-tittle-training{
@@ -24,11 +26,11 @@
     
    }
   .our-training-list{
-    margin-left: auto;
-    margin-right: auto;
+   
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    gap: 24px;
+   
     
   }
    .order-one{
@@ -46,19 +48,23 @@
    .order-five{
     order: 3;
    }
-   
+    .order-four, .order-five {
+        transform: translateY(130px);
+    }
 }
 
 .img-con{
-
+display: none;
 }
 .img-our-training{
     display: none;
 }
 @media screen and (min-width:1200px) {
+
     .img-our-training-one {
-        margin-top: 354px;
+        margin-top: 415px;
         width: 396px;
+        height: 493px;
     }
     .img-our-training-two{
         position: absolute;
@@ -67,6 +73,7 @@
         left: 105px;
     }
     .img-con{
+        display: block;
         position: relative;
         margin-right: 48px;
         width: 396px;
@@ -75,23 +82,15 @@
 }
 .our-training-li {
     padding: 24px;
-    max-width: 358px;
+    
 
    background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 
     4px 16px 24px rgba(0, 0, 0, 0.05);
 }
 @media screen and (min-width: 1200px) {
-   
-    .our-training-li:nth-child(n + 4){
-        margin-left: 24px;
-    }
-    .our-training-li:nth-child(4){
-        margin-top: 134px;
-    }
-    
     .our-training-li{
-        width: 386px;
+       width: 386px;
         padding: 24px;
 
         
@@ -120,7 +119,10 @@
     margin-bottom: 8px;
 }
 @media screen and (min-width: 1200px) {
-    
+    .training-tittle {
+        color: var(--color-black);
+        font-weight: 700;
+    }
     
     .our-training-li:not(:last-child){
         padding: 24px;
