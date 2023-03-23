@@ -10,7 +10,6 @@
   .header-container {
     padding-top: 9px;
     padding-bottom: 9px;
-    justify-content:last baseline;
   }
 }
 
@@ -48,7 +47,7 @@
   letter-spacing: 0.01em;
   color: var(--color-black);
   text-transform: capitalize;
-  margin-right: 31px;
+  margin-right: 29px;
 }
 
 @media screen and (min-width: 1200px){
@@ -60,6 +59,7 @@
 
 
 /* Header NAV LIST */
+/* Geberal */
 
 
 @media screen and (max-width: 1199px){
@@ -74,25 +74,90 @@
 
 .header-nav-list {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
 }
 
-.header-nav-link{
+
+/* Header - NAV - BTN */
+
+
+@media screen and (max-width: 1199px){
+  .btn-container{
+    display: none;
+  }
+}
+
+.btn-container{
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+}
+
+.header-nav-btn{
+  /* position: relative; */
+  padding: 8px 8px 8px 16px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   gap: 4px;
+  background: var(--color-white);
+  border: none;
+  color:  var(--color-black);
   font-family: Montserrat;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(27 /18);
+  letter-spacing: 0.01em;
+}
+
+.header-nav-btn:hover,
+.header-nav-btn:focus,
+.header-nav-btn:active{
+  background-color: aqua;
+}
+
+.icon-arrow-before{
+  opacity: 1;
+}
+.icon-arrow-after{
+  opacity: 0;
+}
+
+.header-nav-btn:hover .icon-arrow-before,
+.header-nav-btn:focus .icon-arrow-before,
+.header-nav-btn:active .icon-arrow-before{
+  opacity: 0;
+}
+
+.header-nav-btn:hover,
+.header-nav-btn:focus,
+.header-nav-btn:active .icon-arrow-after{
+  opacity: 1;
+}
+
+
+/* Header - NAV - Links */
+
+
+.header-nav-link{
+  position: relative;
+  font-family: Montserrat;
   font-size: 18px;
   line-height: calc(27 /18);
   letter-spacing: 0.01em;
   color: var(--color-black);
-  padding: 8px 8px 8px 16px;
+  padding: 8px 16px;
 }
 
-.nav-link{
-  padding: 8px 16px;
+.header-nav-link.current::after{
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+  background-color: var(--color-primary-01);
 }
 
 
@@ -118,6 +183,8 @@
   line-height: calc(27 / 18);
   letter-spacing: 0.01em;
 }
+
+
 
 .header-login-btn{
   min-width: 59px;
