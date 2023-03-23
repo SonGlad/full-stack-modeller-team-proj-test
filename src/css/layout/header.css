@@ -6,14 +6,38 @@
   align-items: center;
 }
 
+@media screen and (min-width: 1200px){
+  .header-container {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    justify-content:last baseline;
+  }
+}
+
+/* Header LOGO */
+
 .header-logo-link{
   height: 64px;
   display: flex;
   align-items: center;
 }
 
+@media screen and (min-width: 1200px){
+  .header-logo-link {
+    height: 46px;
+  }
+}
+
 .header-logo{
   margin-right: 6px;
+}
+
+@media screen and (min-width: 1200px){
+  .header-logo {
+    width: 46px;
+    height: 46px;
+    margin-right: 5px;
+  }
 }
 
 .header-logo-text{
@@ -22,11 +46,81 @@
   font-size: 18px;
   line-height: calc(15 / 18);
   letter-spacing: 0.01em;
-  color: black;
+  color: var(--color-black);
   text-transform: capitalize;
+  margin-right: 31px;
 }
 
-.login-btn{
+@media screen and (min-width: 1200px){
+  .header-logo-text {
+    font-size: 14px;
+    line-height: calc(11 / 14);
+  }
+}
+
+
+/* Header NAV LIST */
+
+
+@media screen and (max-width: 1199px){
+  .header-nav{
+    display: none;
+  }
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav-link{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(27 /18);
+  letter-spacing: 0.01em;
+  color: var(--color-black);
+  padding: 8px 8px 8px 16px;
+}
+
+.nav-link{
+  padding: 8px 16px;
+}
+
+
+
+/* BTN */
+
+
+@media screen and (max-width: 1199px){
+  .header-join-btn{
+    display: none;
+  }
+}
+
+.header-join-btn{
+  width: 280px;
+  height: 48px;
+  background: var(--color-secondary-01);
+  border: none;
+  padding: 11px 0;
+  color: var(--color-white);
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 18;
+  line-height: calc(27 / 18);
+  letter-spacing: 0.01em;
+}
+
+.header-login-btn{
   min-width: 59px;
   height: 48px;
   background: transparent;
@@ -37,4 +131,10 @@
   font-size: 18;
   line-height: calc(27 / 18);
   letter-spacing: 0.01em;
+}
+
+@media screen and (min-width: 1200px){
+  .header-login-btn {
+    margin-left: 24px;
+  }
 }
