@@ -1,4 +1,4 @@
-// import "./js/slick"
+ import "./js/slick"
 // import "./js/mobile"
 // import "./js/form-validation"
 // import "./js/header-&-scroll-to-top"
