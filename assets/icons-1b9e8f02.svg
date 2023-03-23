@@ -33,6 +33,9 @@
 
 
     <!-- Header -->
+    <symbol id="icon-arrow_drop_down" viewBox="0 0 32 32">
+      <path d="M9.333 12.667l6.667 6.667 6.667-6.667h-13.333z"></path>
+    </symbol>
 
 
     <!-- Modal Close -->
