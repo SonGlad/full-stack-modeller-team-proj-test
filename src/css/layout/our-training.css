@@ -4,6 +4,75 @@
     margin-top: 40px;
     margin-bottom: 32px;
 }
+@media screen and (min-width:1200px) {
+    .section-tittle-training{
+        text-align: start;
+        width: 796px;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+   .con-our-training{
+    display: flex;
+    
+    padding: 100px;
+   }
+   .section-con{
+    
+   }
+  .our-training-list{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+  }
+   .order-one{
+    order: -1;
+   }
+   .order-two {
+    order: 2;
+   }
+   .order-three{
+    order: 4;
+   }
+   .order-four{
+    order: 1;
+   }
+   .order-five{
+    order: 3;
+   }
+   
+}
+
+.img-con{
+
+}
+.img-our-training{
+    display: none;
+}
+@media screen and (min-width:1200px) {
+    .img-our-training-one {
+        margin-top: 354px;
+        width: 396px;
+    }
+    .img-our-training-two{
+        position: absolute;
+        z-index: 2;
+        width: 291px;
+        left: 105px;
+    }
+    .img-con{
+        position: relative;
+        margin-right: 48px;
+        width: 396px;
+        
+    }
+}
 .our-training-li {
     padding: 24px;
     max-width: 358px;
@@ -12,6 +81,24 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 
     4px 16px 24px rgba(0, 0, 0, 0.05);
 }
+@media screen and (min-width: 1200px) {
+   
+    .our-training-li:nth-child(n + 4){
+        margin-left: 24px;
+    }
+    .our-training-li:nth-child(4){
+        margin-top: 134px;
+    }
+    
+    .our-training-li{
+        width: 386px;
+        padding: 24px;
+
+        
+    }
+    
+}
+
 .our-training-li:not(:first-child){
     padding: 16px;
 }
@@ -19,10 +106,26 @@
     
     fill: var(--color-light-grey);
 }
+
 .our-training-li:not(:last-child){
     margin-bottom: 24px;
 
 }
+@media screen and (min-width: 1200px) {
+    .our-training-li:not(:last-child){
+        margin-bottom: 0;
+    }
+}
 .training-tittle{
     margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+    
+    
+    .our-training-li:not(:last-child){
+        padding: 24px;
+    }
+    .our-training-li:not(:first-child){
+        padding: 24px;
+    }
 }
