@@ -17,15 +17,29 @@
 
 /* Components */
 
+@import url('./components/divider.css');
 @import url('./components/container.css');
 @import url('./components/titels.css');
 @import url('./components/commontext.css');
 @import url('./components/buttons.css');
 
+
 /* layout */
 
 @import url('./layout/header.css');
+@import url('./layout/hero.css');
 @import url('./layout/our-training.css');
+@import url('./layout/learn.css');
 @import url('./layout/company.css');
+@import url('./layout/blue-print.css');
+@import url('./layout/certificates.css');
+@import url('./layout/membership.css');
+@import url('./layout/stories.css');
+@import url('./layout/our-team.css');
+@import url('./layout/courses.css');
+@import url('./layout/blog.css');
+@import url('./layout/contact-us.css');
+@import url('./layout/footer.css');
+
 
 /* Mobile Menu + MODALS */
