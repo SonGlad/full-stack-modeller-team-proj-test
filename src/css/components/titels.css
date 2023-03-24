@@ -33,7 +33,7 @@
 	font-family: "Lato";
 	font-weight: 700;
 	font-style: normal;
-	line-height: 130%;
+	line-height: calc(62 / 48);
 	letter-spacing: 0.01em;
 	text-decoration: none;
 	text-transform: none;
@@ -67,4 +67,14 @@
 	letter-spacing: 0.01em;
 	text-decoration: none;
 	text-transform: none;
+}
+.b1-body {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-style: normal;
+	line-height: calc(21 / 14);
+	font-size: 14px;
+	color: var(--color-black);
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
 }
