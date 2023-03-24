@@ -33,7 +33,7 @@
 	font-family: "Lato";
 	font-weight: 700;
 	font-style: normal;
-	line-height: 130%;
+	line-height: calc(62 / 48);
 	letter-spacing: 0.01em;
 	text-decoration: none;
 	text-transform: none;
@@ -53,7 +53,7 @@
 	font-family: "Lato";
 	font-weight: 700;
 	font-style: normal;
-	line-height: 150%;
+	line-height: calc(48 / 32);
 	letter-spacing: 0.01em;
 	text-decoration: none;
 	text-transform: none;
@@ -63,8 +63,18 @@
 	font-family: "Lato";
 	font-weight: 700;
 	font-style: normal;
-	line-height: 140%;
+	line-height: calc(34 / 24);
 	letter-spacing: 0.01em;
 	text-decoration: none;
 	text-transform: none;
+}
+.b1-body {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-style: normal;
+	line-height: calc(21 / 14);
+	font-size: 14px;
+	color: var(--color-black);
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
 }
