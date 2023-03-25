@@ -1,0 +1,85 @@
+/* section Hero (start)  */
+
+
+
+
+.hero{
+    padding-top: 49px;
+}
+.hero .content-winning{
+    margin-bottom: 22px;
+    display: none;
+}
+.hero .content-winning{
+    width: 100%;
+    max-width: 135px;
+}
+.hero .text-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: calc(70 / 64);
+    letter-spacing: -0.01em;
+    color: var(--color-black);
+    margin-bottom: 12px;
+}
+.hero .text_color-a{
+    color: var(--color-primary-01);
+}
+.hero .text_color{
+    color: var(--color-primary-01);
+}
+.hero .text-description{
+    font-size: 18px;
+    line-height: calc(27 / 18);
+    letter-spacing: 0.01em;
+    color: var(--color-grey);
+    margin-bottom: 24px;
+}
+.hero .content-free{
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: var(--color-secondary-01);
+    padding: 10.5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(27 / 18);
+    color: var(--color-white);
+}
+.hero .content-recomend{
+    width: calc(100% + 32px);
+    margin-left: -16px; 
+    display: flex;
+    gap: 16px;
+    background-color: var(--color-primary-01);
+    padding: 16px 0;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 200px;
+    overflow-x: scroll;
+}
+.hero .recomend-item{
+    text-align: center;
+    /* width: 100%; */
+    min-width: 160px;
+}
+.hero .recomend-item h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(48 / 32);
+    letter-spacing: 0.01em;
+    color: var(--color-white);
+}
+.hero .recomend-item p{
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.01em;
+    color: var(--color-white);
+}
+
+
+
+
+
+
+/* section Hero (end)  */
