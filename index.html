@@ -26,9 +26,9 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"/>
     
-    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
-
+  
     <!-- Js delivery slick -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -37,8 +37,8 @@
 
     <!-- ===Store JS=== -->
    
-    <script type="module" crossorigin src="/full-stack-modeller-team-proj-test/assets/index-e6adcce4.js"></script>
-    <link rel="stylesheet" href="/full-stack-modeller-team-proj-test/assets/index-5b94bdf6.css">
+    <script type="module" crossorigin src="/full-stack-modeller-team-proj-test/assets/index-3ad4ca37.js"></script>
+    <link rel="stylesheet" href="/full-stack-modeller-team-proj-test/assets/index-030b1f1a.css">
   </head>
 
   <body>
@@ -56,14 +56,14 @@
         </a>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-content">
-                    <a class="header-nav-link header-nav-link-focus" href="#">Training
+                <li class="header-nav-content dropdown">
+                    <button onclick="myFunction()" class="header-nav-link dropbtn">Training
                         <svg class="nav-link-arrow" width="24px" height="24px" >
                             <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-ec2b1ec3.svg#icon-arrow_drop_down"></use>
                             <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-ec2b1ec3.svg#icon-arrow_drop_up"></use>
                         </svg>
-                    </a>
-                        <ul class="dropdown-container">
+                    </button>   
+                        <ul class="dropdown-content" id="myDropdown">
                             <li class="dropdown-list-item">
                                 <a class="dropdown-link" href="#">Full Stack Membership</a>
                             </li>
@@ -81,14 +81,14 @@
                             </li>
                         </ul>                 
                 </li>
-                <li class="header-nav-content">
-                    <a class="header-nav-link header-nav-link-focus" href="#">Resources
+                <li class="header-nav-content dropdown">
+                    <button onclick="myFunction()" class="header-nav-link dropbtn">Resources
                         <svg class="nav-link-arrow" width="24px" height="24px" >
                             <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-ec2b1ec3.svg#icon-arrow_drop_down"></use>
                             <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-ec2b1ec3.svg#icon-arrow_drop_up"></use>
                         </svg>
-                    </a>
-                    <ul class="dropdown-container">
+                    </button> 
+                    <ul class="dropdown-content" id="myDropdown">
                         <li class="dropdown-list-item">
                             <a class="dropdown-link" href="#">Free Skills Assessment </a>
                         </li>
@@ -118,6 +118,7 @@
         <button class="header-login-btn" type="button" aria-expanded="false" aria-controls="log-in">Log In</button>
     </div>
 </header>
+
 
     <!-- Main -->
 
@@ -652,12 +653,40 @@
      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
      
      <!-- <script type="module" src="/main.js"></script> -->
+
+     <!-- SMOOTH SCROLL -->
     
       <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
         easing: 'easeInOutQuart',
         });
       </script>
-    
+
+
+      <!-- HEADER NAV MENU -->
+
+
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
   </body>
 </html>
