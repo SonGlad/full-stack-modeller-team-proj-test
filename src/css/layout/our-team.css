@@ -5,6 +5,7 @@
     transform: translateX(150%);
 }
 .con-section-team{
+   
     padding-top: 56px;
     padding-bottom: 56px;
 }
@@ -60,6 +61,7 @@
     gap: 24px;
 }
 .card-team-li {
+    /* margin: 0 12px; */
     width: 200px;
     height: 464px;
 }
