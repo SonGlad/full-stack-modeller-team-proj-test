@@ -3,19 +3,9 @@
   --color-white: #ffffff;
   --color-grey: #485261;
   --color-light-grey: #7d8897;
-  --color-grey-gradient: linear-gradient(
-    to bottom,
-    #cfd4da 0%,
-    #cfd4da 48.96%,
-    #cfd4da 100%
-  );
+  --color-grey-gradient: linear-gradient(to bottom, #cfd4da 0%, #cfd4da 48.96%, #cfd4da 100%);
   --color-ultra-light-grey: #f8fafc;
-  --color-gradient-for-dividers: linear-gradient(
-    to bottom,
-    #ededed 0%,
-    #f0f0f0 46.88%,
-    #f4f4f4 100%
-  );
+  --color-gradient-for-dividers: linear-gradient(to bottom, #ededed 0%, #f0f0f0 46.88%, #f4f4f4 100%);
   --color-primary-01: #f46a5d;
   --color-primary-02: #fa8c82;
   --color-primary-03: #f3ada2;
