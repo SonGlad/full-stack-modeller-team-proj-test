@@ -5,7 +5,7 @@
     transform: translateX(150%);
 }
 .con-section-team{
-   
+    padding: 0;
     padding-top: 56px;
     padding-bottom: 56px;
 }
@@ -16,8 +16,9 @@
     }
     
 }
+
 .tittle-section-team{
-    
+    margin-left: 100px;
     margin-bottom: 32px;
     color: var(--color-black); 
 }
