@@ -1,0 +1,104 @@
+<section class="contact-section">
+  <div class="container contact-container">
+    <h3 class="common-style-h-5 store-modal-title">Contact us</h3>
+    <form>
+      <label class="title-of-form style-for-name" for="user_name_store">
+        <div class="icon-position">
+          <input
+            class="store-name-field input-js"
+            type="text"
+            pattern="[a-zA-Z0-9]+"
+            name="user_name"
+            id="user_name_store"
+            required
+          />
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons email-icon blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-name-form title-of-form">Your Name</span>
+        </div>
+      </label>
+      <label class="title-of-form style-for-email" for="user_email_store">
+        <div class="icon-position">
+          <input
+            class="store-email-field input-js"
+            type="email"
+            name="user-email"
+            id="user_email_store"
+            required
+          />
+
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons email-icon blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-email-form title-of-form">Your Email</span>
+        </div>
+      </label>
+      <label class="title-of-form style-for-tel" for="user_phone_contact">
+        <div class="icon-position">
+          <input
+            class="store-phone-field input-js"
+            type="tel"
+            name="user-email"
+            id="user_phone_contact"
+            required
+          />
+          <svg
+            class="blog-field-icons blog-field-icons-ok"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-ok_svg"></use>
+          </svg>
+          <svg
+            class="blog-field-icons email-icon blog-field-icons-error"
+            width="20"
+            height="20"
+          >
+            <use href="./img/icons/icons.svg#icon-error-logo"></use>
+          </svg>
+          <span class="title-tel-form title-of-form"
+            >Your Phone (optional)</span
+          >
+        </div>
+      </label>
+      <label class="title-of-form style-for-comment">
+        <div class="icon-position">
+          <textarea class="modal-form-comment" name="user_comment"></textarea>
+          <span class="title-ask-form title-of-form"
+            >Your Question or Request</span
+          >
+        </div>
+      </label>
+      <button
+        class="btn-common store-modal-btn js-open-modal button-js"
+        type="submit"
+        data-modal="2"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>
