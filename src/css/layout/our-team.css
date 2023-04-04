@@ -9,6 +9,14 @@
     padding-top: 56px;
     padding-bottom: 56px;
 }
+
+
+/* @media screen and (max-width: 480px) {
+    .con-section-team {
+        overflow: hidden;
+    }
+  
+} */
 @media screen and (min-width: 1200px) {
     .con-section-team{
         padding-top: 80px;
@@ -61,11 +69,15 @@
     display: flex;
     gap: 24px;
 }
+
+
 .card-team-li {
     /* margin: 0 12px; */
     width: 200px;
     height: 464px;
 }
+
+
 /* team card */
 .kenny{
     padding: 31px 16px;
@@ -74,3 +86,5 @@
 .myles, .jordan{
     padding: 32px 16px;
 }
+
+
