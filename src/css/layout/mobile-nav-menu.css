@@ -42,15 +42,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    fill: var(--color-neutral-01);
+    transition: fill var(--main-trans);
   }
 
   .nav-icon{
     margin-bottom: 5px;
-  }
-
-  .nav-link-icon,
-  .nav-icon{
-    fill: var(--color-neutral-01);
   }
 
   .nav-text,
@@ -58,5 +55,13 @@
     font-family: "Montserrat";
     font-size: 16px;
     line-height: calc(24 / 16);
+   }
+
+  .nav-menu-btn:hover,
+  .mobile-nav-link:hover,
+  .nav-menu-btn:active{
+    font-weight: 700;
+    fill: var(--color-secondary-01);
+    transition: font-weight var(--main-trans), fill var(--main-trans);
   }
 
