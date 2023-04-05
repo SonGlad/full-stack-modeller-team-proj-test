@@ -26,8 +26,9 @@
 @media screen and (min-width:1200px) {
    .con-our-training{
     display: flex;
-    
-    padding: 100px;
+    gap: 48px;
+    padding-top: 100px;
+    padding-bottom: 100px;
    }
   
   .our-training-list{
@@ -67,21 +68,30 @@ display: none;
 @media screen and (min-width:1200px) {
 
     .img-our-training-one {
-        margin-top: 345px;
+        margin-top: 428px;
         width: 396px;
         height: 493px;
+        
+        
     }
     .img-our-training-two{
         position: absolute;
         z-index: 2;
-        width: 291px;
-        height: 490px;
-        left: 105px;
+        width: 331px;
+        height: 568px;
+        top: 0;
+        right: 0;
+       /* transform-origin: top right; */
+        /* left: 65px; */
+        border-bottom: 40px solid #ffffff;
+        border-left: 40px solid #FFFFFF;
     }
     .img-con{
         display: block;
         position: relative;
-        margin-right: 48px;
+        /* margin-right: 48px; */
+        
+        
         width: 396px;
         
     }
