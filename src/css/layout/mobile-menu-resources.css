@@ -72,3 +72,11 @@
         color: rgba(60, 60, 67, 0.6);
     }
 }
+
+@media screen and (min-width: 768px){
+    .menu-container,
+    .page-nav-mobile,
+    .nav-mobile-content{
+        display: none;
+    }
+}  
