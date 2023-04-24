@@ -23,13 +23,14 @@
 	font-family: "Montserrat";
 	font-weight: 700;
 	font-style: normal;
-	line-height: 150%;
+	line-height: calc(27 / 18);
 	letter-spacing: 0.01em;
 	text-decoration: none;
 	text-transform: uppercase;
 
     
-}/* .btn-common {
+}
+/* .btn-common {
     display: inline-block;
     border: none;
     border-radius: 38px;
