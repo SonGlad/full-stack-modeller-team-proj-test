@@ -5,7 +5,7 @@ var $jq = jQuery.noConflict();
 
 $('.list-card-team').slick({
   infinite: true,
-  slidesToShow: 6.7,
+  slidesToShow: 6.3,
   
   speed: 500, 
   autoplay: true,
@@ -22,9 +22,9 @@ $('.list-card-team').slick({
       }
     },
     {
-      breakpoint: 1200,
+      breakpoint: 1264,
       settings: {
-        slidesToShow: 6.7,
+        slidesToShow: 6.3,
         
         speed: 500, 
         autoplay: true,

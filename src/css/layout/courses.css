@@ -5,7 +5,7 @@
     width: 389px;
 }
 .con-section-courses{
-    padding: 80px 100px;
+    padding: 80px 0;
 }
 .tittle-tex-courses{
     text-align: center;
@@ -71,6 +71,7 @@
     opacity: 0;
 }
 .btn-card{
+    width: 349px;
     margin-bottom: 24px;
     align-content: center;
     padding: 12px 87px;
