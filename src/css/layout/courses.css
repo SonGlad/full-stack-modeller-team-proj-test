@@ -4,31 +4,41 @@
     transform: translateX(-95px);
     width: 389px;
 }
-.con-section-courses{
-    padding: 80px 100px;
-}
 .tittle-tex-courses{
     text-align: center;
-    margin-bottom: 8px;
-
     color: var(--color-black);
+    margin-bottom: 8px;
 }
 .par-txt-courses{
-    margin-bottom: 48px;
     text-align: center;
     color: var(--color-grey);
+    margin-bottom: 32px;
 }
-.card-courses {
+.con-section-courses{
+    padding: 56px 16px;
+}
+.card-courses{
     display: flex;
-    gap: 24px;
+    flex-direction: column;
 
 }
-.card-courses-li {
-    padding: 0 24px;
-    width: 397px;
-    background-color: var(--color-white);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 
-    4px 16px 24px rgba(0, 0, 0, 0.05);
+.card-courses-li{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 301px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 
+        4px 16px 24px rgba(0, 0, 0, 0.05);
+    
+
+}
+
+.card-courses-li:not(:last-child){
+    margin-bottom: 24px;
 }
 .tittle-txt-data{
     color: var(--color-white);
@@ -40,40 +50,33 @@
     margin-left: -24px;
     width: calc(100% + 48px);
 }
-.par-txt-con-courses-two{
-    margin-top: 16px;
-    margin-bottom: 137px;
-}
-.par-txt-con-courses{
-    margin-top: 16px;
-    margin-bottom: 193px;
-}
-.par-txt-con-courses-last{
-    margin-top: 16px;
-    margin-bottom: 221px;
-}
 .con-sales{
     margin-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.free {
+.con-sales-last{
+    justify-content: end;
+ }
+ .free {
+     
     
-   
-    padding: 3px 16px;
-    
-    background-color: var(--color-primary-04);
-    border-radius: 100px;
+     padding: 3px 16px;
+     
+     background-color: var(--color-primary-04);
+     border-radius: 100px;
+ 
+ }
 
+.btn-txt-card{
+   font-size: 16px; 
 }
-.free-par-last{
-    opacity: 0;
-}
-.btn-card{
-    margin-bottom: 24px;
+ .btn-card{
+    max-width: 349px;
+    /* margin-bottom: 24px; */
     align-content: center;
-    padding: 12px 87px;
+    padding: 12px 92px;
     color: var(--color-white);
     background-color: var(--color-secondary-01);
     border: 0;
@@ -84,4 +87,108 @@
 .btn-card:focus{
     background-color: var(--color-secondary-03);
 }
+
+@media screen and (min-width: 768px) {
+    .con-section-courses{
+        padding: 80px 0;
+    }
+    .tittle-tex-courses{
+        text-align: center;
+        margin-bottom: 8px;
+    
+        color: var(--color-black);
+    }
+    .par-txt-courses{
+        margin-bottom: 48px;
+        text-align: center;
+        color: var(--color-grey);
+    }
+    .card-courses {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    
+    }
+    .card-courses-li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 462px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+      
+        width: 397px;
+        background-color: var(--color-white);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 
+        4px 16px 24px rgba(0, 0, 0, 0.05);
+    }
+    
+    
+    .tittle-txt-data{
+        color: var(--color-white);
+        padding-top: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: var(--color-primary-02);
+        margin-left: -24px;
+        width: calc(100% + 48px);
+    }
+    
+    .par-txt-con-courses{
+        margin-top: 16px;
+        margin-bottom: 169px;
+    }
+    .par-txt-con-courses-two{
+        margin-top: 24px;
+        margin-bottom: 111px;
+    }
+    
+    .par-txt-con-courses-last{
+        margin-top: 24px;
+        margin-bottom: 197px;
+    }
+    
+    
+    .con-sales{
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .con-sales-last{
+       justify-content: end;
+    }
+    .free {
+        
+       
+        padding: 3px 16px;
+        
+        background-color: var(--color-primary-04);
+        border-radius: 100px;
+    
+    }
+    .free-par-last{
+        opacity: 0;
+    }
+    .btn-card{
+        width: 349px;
+        /* margin-bottom: 24px; */
+        align-content: center;
+        padding: 12px 87px;
+        color: var(--color-white);
+        background-color: var(--color-secondary-01);
+        border: 0;
+    }
+    .btn-card:hover{
+        background-color: var(--color-secondary-02);
+    }
+    .btn-card:focus{
+        background-color: var(--color-secondary-03);
+    }
+}
+
+
+
 
