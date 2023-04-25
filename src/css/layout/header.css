@@ -7,9 +7,17 @@
 }
 
 @media screen and (min-width: 1264px){
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
   .header-container {
     padding-top: 9px;
     padding-bottom: 9px;
+    background-color: var(--color-white);
   }
 }
 

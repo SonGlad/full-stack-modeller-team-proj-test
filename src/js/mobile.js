@@ -19,7 +19,12 @@
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
-  };
+  
+        // Close the second menu if it's open
+        if (openMenuBtn2.getAttribute('aria-expanded') === 'true') {
+          toggleMenu2();
+        }
+      };
 
   openMenuBtn.addEventListener('click', toggleMenu);
   // closeMenuBtn.addEventListener('click', toggleMenu);
@@ -57,7 +62,13 @@
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
-  };
+ 
+
+       // Close the first menu if it's open
+       if (openMenuBtn.getAttribute('aria-expanded') === 'true') {
+        toggleMenu();
+      }
+    };
 
   openMenuBtn2.addEventListener('click', toggleMenu2);
   // closeMenuBtn2.addEventListener('click', toggleMenu2);
@@ -73,23 +84,6 @@
     mobileMenu2.classList.remove('is-open');
     openMenuBtn2.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
+    
   });
 })();
-
-// window.onclick = function(event) {
-//   if (!event.target.matches('.js-open-menu') && !event.target.matches('.js-menu-container') && !event.target.matches('.js-open-menu-2') && !event.target.matches('.js-menu-container-2')) {
-//     var dropdowns = document.getElementsByClassName("menu-container");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('is-open')) {
-//         openDropdown.classList.remove('is-open');
-
-//       }
-//     }
-//   } else if (event.target.matches('.js-open-menu')) {
-//     document.getElementById("mobile-menu-2").classList.remove("is-open");
-//   } else if (event.target.matches('.js-open-menu-2')) {
-//     document.getElementById("mobile-menu").classList.remove("is-open");
-//   }
-// }
