@@ -17,7 +17,8 @@
   .header-container {
     padding-top: 9px;
     padding-bottom: 9px;
-    background-color: var(--color-white);
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(7px);
   }
 }
 
@@ -174,11 +175,11 @@
 
 .icon-arrow-before{
   opacity: 1;
-  /* transition: opacity var(--main-trans); */
- }
+  transition: opacity var(--main-trans);
+}
 .icon-arrow-after{
   opacity: 0;
-  /* transition: opacity var(--main-trans); */
+  transition: opacity var(--main-trans);
 }
 .header-nav-link:hover .icon-arrow-before,
 .header-nav-link:focus .icon-arrow-before{

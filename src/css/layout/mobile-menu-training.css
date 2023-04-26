@@ -9,8 +9,6 @@
         z-index: 800;
         visibility: hidden;
         opacity: 0;
-        /* transform: translateY(150%);
-        transition: all var(--main-trans); */
         transition: opacity var(--main-trans), visibility var(--main-trans);
         overflow: hidden;
     }
@@ -19,10 +17,6 @@
         visibility: visible;
         opacity: 1;
         transition: opacity var(--main-trans);
-        /* visibility: visible;
-        opacity: 1;
-        transform: translateY(0%);
-        transition: all var(--main-trans); */
     }
     
 
