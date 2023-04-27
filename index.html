@@ -38,7 +38,7 @@
     <!-- ===Store JS=== -->
    
     <script type="module" crossorigin src="/full-stack-modeller-team-proj-test/assets/index-003e8193.js"></script>
-    <link rel="stylesheet" href="/full-stack-modeller-team-proj-test/assets/index-61786bce.css">
+    <link rel="stylesheet" href="/full-stack-modeller-team-proj-test/assets/index-64f8de94.css">
   </head>
 
   <body>
@@ -50,7 +50,7 @@
     <div class="container header-container">
         <a class="header-logo-link" aria-label="logo" href="./index.html">
             <svg class="header-logo" width="64px" height="64px">
-                <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-Logo"></use>
+                <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-Logo"></use>
             </svg>
             <p class="header-logo-text">Full<br>Stack<br>Modeller</p>
         </a>
@@ -59,52 +59,56 @@
                 <li class="header-nav-content">
                     <button onclick="myFunction1()" class="header-nav-link dropbtn1">Training
                         <svg class="nav-link-arrow" width="24px" height="24px" >
-                            <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-arrow_drop_down"></use>
-                            <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-arrow_drop_up"></use>
+                            <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_down"></use>
+                            <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_up"></use>
                         </svg>
-                    </button>   
-                        <ul class="dropdown-content" id="dropdown-content1">
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Full Stack Membership</a>
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Corporate Training</a>                                
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Fundamentals of FAST Modelling</a>
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Excel Mastery Bootcamp</a>
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Data Visualisation</a>
-                            </li>
-                        </ul>                 
+                    </button>
+                        <nav>   
+                            <ul class="dropdown-content" id="dropdown-content1">
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Full Stack Membership</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Corporate Training</a>                                
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Fundamentals of FAST Modelling</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Excel Mastery Bootcamp</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Data Visualisation</a>
+                                </li>
+                            </ul>
+                        </nav>                     
                 </li>
                 <li class="header-nav-content">
                     <button onclick="myFunction2()" class="header-nav-link dropbtn2">Resources
                         <svg class="nav-link-arrow" width="24px" height="24px" >
-                            <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-arrow_drop_down"></use>
-                            <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-arrow_drop_up"></use>
+                            <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_down"></use>
+                            <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_up"></use>
                         </svg>
                     </button> 
-                    <ul class="dropdown-content" id="dropdown-content2">
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Free Skills Assessment</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Videos</a>                                
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">E-Books</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Blog</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Newsletter</a>
-                        </li>
-                    </ul>
+                        <nav>
+                            <ul class="dropdown-content" id="dropdown-content2">
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Free Skills Assessment</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Videos</a>                                
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">E-Books</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Blog</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Newsletter</a>
+                                </li>
+                            </ul>
+                        </nav>
                 </li>
                 <li class="header-nav-content">
                     <a class="header-nav-link header-nav-link-focus" href="#">Events</a>
@@ -114,7 +118,23 @@
                 </li>
             </ul>
         </nav>
-        <button class="header-join-btn" type="button" aria-expanded="false" aria-controls="join-us">Join Us</button>
+        <div class="header-join-btn-cont">
+            <button class="header-join-btn" type="button">Join Us
+                <svg class="header-btn-svg" width="12px" height="8px">
+                    <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-vector_arrow_down"></use>
+                </svg>
+            </button>
+                <nav class="join-btn-nav">
+                    <ul class="dropdown-content-join">
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-link" href="#">Individual Membership</a>
+                        </li>
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-link" href="#">Team Membership</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
         <button class="header-login-btn" type="button" aria-expanded="false" aria-controls="log-in">Log In</button>
     </div>
 </header>
@@ -126,7 +146,7 @@
                 <button type=button class="nav-menu-btn js-open-menu"
                 aria-expanded="false" aria-controls="mobile-menu">
                     <svg class="nav-link-icon" width="24px" height="24px">
-                        <use class="nav-link-icon-btn" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-toolset"></use>
+                        <use class="nav-link-icon-btn" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-toolset"></use>
                     </svg>
                     <span class="nav-text">Training</span>
                 </button>
@@ -135,7 +155,7 @@
                 <button type=button class="nav-menu-btn js-open-menu-2"
                 aria-expanded="false" aria-controls="mobile-menu-2" >
                     <svg class="nav-link-icon" width="24px" height="24px">
-                        <use class="nav-link-icon-btn" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-folder"></use>
+                        <use class="nav-link-icon-btn" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-folder"></use>
                     </svg>
                     <span class="nav-text">Resources</span>
                 </button>
@@ -143,7 +163,7 @@
             <li class="mobile-nav-item-link">
                 <a class="mobile-nav-link" href="">
                     <svg class="nav-icon" width="24px" height="24px">
-                        <use class="nav-link-icon-link" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-calendar_month"></use>
+                        <use class="nav-link-icon-link" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-calendar_month"></use>
                     </svg>
                     <span class="nav-text-link">Events</span>
                 </a>
@@ -151,7 +171,7 @@
             <li class="mobile-nav-item-link">
                 <a class="mobile-nav-link" href="">
                     <svg class="nav-icon" width="24px" height="24px">
-                        <use class="nav-link-icon-link" href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-quiz"></use>
+                        <use class="nav-link-icon-link" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-quiz"></use>
                     </svg>
                     <span class="nav-text-link">FAQ</span>
                 </a>
@@ -229,7 +249,7 @@
         <ul class="our-training-list">
           <li class="our-training-li order-one">
               <svg class="icon-training" width="32px" height="32px">
-                <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-exel"></use>
+                <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-exel"></use>
               </svg>
               <h3 class="common-style-h-6 training-tittle">Excel Mastery</h3>
                 <p class="common-text-p-2-book">From core function knowledge and confident use of Excel Tables and Pivot Tables, to a truly unique way to</p>
@@ -237,7 +257,7 @@
           <li class="our-training-li order-two">
             
               <svg class="icon-training" width="32px" height="32px">
-                <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-advanced"></use>
+                <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-advanced"></use>
               </svg>
               <h3 class="common-style-h-6 training-tittle">Advanced Financial<br>Modelling</h3>
                 <p class="common-text-p-2-book">From core function knowledge and confident use of Excel Tables and Pivot Tables, to a truly unique way to</p>
@@ -245,7 +265,7 @@
           <li class="our-training-li order-three">
             
             <svg class="icon-training" width="32px" height="32px">
-              <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-analytics"></use>
+              <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-analytics"></use>
             </svg>
             <h3 class="common-style-h-6 training-tittle">Data Visualisation &<br>Analytics</h3>
             <p class="common-text-p-2-book">From core function knowledge and confident use of Excel Tables and Pivot Tables, to a truly unique way to</p>
@@ -253,14 +273,14 @@
           
           <li class="our-training-li order-four">
             <svg class="icon-training" width="32px" height="32px">
-              <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-modelling-tech"></use>
+              <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-modelling-tech"></use>
             </svg>
             <h3 class="common-style-h-6 training-tittle">Modelling Tech</h3>
             <p class="common-text-p-2-book">From core function knowledge and confident use of Excel Tables and Pivot Tables, to a truly unique way to</p>
           </li>
           <li class="our-training-li order-five">
             <svg class="icon-training" width="32px" height="32px">
-              <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-communication"></use>
+              <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-communication"></use>
             </svg>
             <h3 class="common-style-h-6 training-tittle">Communication &<br>Presentation skills</h3>
               <p class="common-text-p-2-book">From core function knowledge and confident use of Excel Tables and Pivot Tables, to a truly unique way to</p>    
@@ -467,14 +487,14 @@
             width="20"
             height="20"
           >
-            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-ok_svg"></use>
+            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-ok_svg"></use>
           </svg>
           <svg
             class="blog-field-icons email-icon blog-field-icons-error"
             width="20"
             height="20"
           >
-            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-error-logo"></use>
+            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-error-logo"></use>
           </svg>
           <span class="title-name-form title-of-form">Your Name</span>
         </div>
@@ -494,14 +514,14 @@
             width="20"
             height="20"
           >
-            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-ok_svg"></use>
+            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-ok_svg"></use>
           </svg>
           <svg
             class="blog-field-icons email-icon blog-field-icons-error"
             width="20"
             height="20"
           >
-            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-error-logo"></use>
+            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-error-logo"></use>
           </svg>
           <span class="title-email-form title-of-form">Your Email</span>
         </div>
@@ -520,14 +540,14 @@
             width="20"
             height="20"
           >
-            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-ok_svg"></use>
+            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-ok_svg"></use>
           </svg>
           <svg
             class="blog-field-icons email-icon blog-field-icons-error"
             width="20"
             height="20"
           >
-            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-error-logo"></use>
+            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-error-logo"></use>
           </svg>
           <span class="title-tel-form title-of-form"
             >Your Phone (optional)</span
@@ -563,7 +583,7 @@
         <div class="main-container">
             <a class="footer-logo-link" aria-label="logo" href="./index.html">
                 <svg class="footer-logo" width="108px" height="108px">
-                    <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-Logo"></use>
+                    <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-Logo"></use>
                 </svg>
                 <p class="footer-logo-text">Full<br>Stack<br>Modeller</p>
             </a>
@@ -571,14 +591,14 @@
                 <li class="footer-socials-item">
                     <a class="footer-socials-link" href="https://www.linkedin.com" aria-label="Linkedin link" target="_blank" rel="noreferrer noopener">
                         <svg class="footer-socials-svg" width="30px" height="30px">
-                            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-linkedin"></use>
+                            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-linkedin"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer-socials-item">
                     <a class="footer-socials-link" href="https://www.facebook.com" aria-label="Facebook link" target="_blank" rel="noreferrer noopener">
                         <svg class="footer-socials-svg" width="30px" height="30px">
-                            <use href="/full-stack-modeller-team-proj-test/assets/icons-608e144e.svg#icon-facebook"></use>
+                            <use href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
@@ -752,19 +772,18 @@
         }
       function myFunction2() {
           document.getElementById("dropdown-content2").classList.toggle("show");
-        }
-      
+        }     
       // Close the dropdown if the user clicks outside of it
 
       window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn1') && !event.target.matches('.dropdown-content1') && !event.target.matches('.dropbtn2') && !event.target.matches('.dropdown-content2')) {
+        if (!event.target.matches('.dropbtn1') && !event.target.matches('.dropdown-content1') 
+          && !event.target.matches('.dropbtn2') && !event.target.matches('.dropdown-content2')) {
           var dropdowns = document.getElementsByClassName("dropdown-content");
           var i;
           for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
               openDropdown.classList.remove('show');
-
             }
           }
         } else if (event.target.matches('.dropbtn1')) {
@@ -774,6 +793,7 @@
         }
       }
     </script>
+    
 
 
   </body>

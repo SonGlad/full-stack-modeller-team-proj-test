@@ -52,6 +52,9 @@
     <symbol id="icon-arrow_drop_up" viewBox="0 0 32 32">
       <path d="M9.333 19.333l6.667-6.667 6.667 6.667h-13.333z"></path>
     </symbol>
+    <symbol id="icon-vector_arrow_down" viewBox="0 0 48 32">
+      <path d="M42.36 1.18l-18.36 18.32-18.36-18.32-5.64 5.64 24 24 24-24-5.64-5.64z"></path>
+    </symbol>
 
 
     <!-- Modal Close -->
