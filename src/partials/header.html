@@ -14,24 +14,26 @@
                             <use class="icon-arrow-before" href="./img/icons/icons.svg#icon-arrow_drop_down"></use>
                             <use class="icon-arrow-after" href="./img/icons/icons.svg#icon-arrow_drop_up"></use>
                         </svg>
-                    </button>   
-                        <ul class="dropdown-content" id="dropdown-content1">
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Full Stack Membership</a>
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Corporate Training</a>                                
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Fundamentals of FAST Modelling</a>
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Excel Mastery Bootcamp</a>
-                            </li>
-                            <li class="dropdown-list-item">
-                                <a class="dropdown-link" href="#">Data Visualisation</a>
-                            </li>
-                        </ul>                 
+                    </button>
+                        <nav>   
+                            <ul class="dropdown-content" id="dropdown-content1">
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Full Stack Membership</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Corporate Training</a>                                
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Fundamentals of FAST Modelling</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Excel Mastery Bootcamp</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Data Visualisation</a>
+                                </li>
+                            </ul>
+                        </nav>                     
                 </li>
                 <li class="header-nav-content">
                     <button onclick="myFunction2()" class="header-nav-link dropbtn2">Resources
@@ -40,23 +42,25 @@
                             <use class="icon-arrow-after" href="./img/icons/icons.svg#icon-arrow_drop_up"></use>
                         </svg>
                     </button> 
-                    <ul class="dropdown-content" id="dropdown-content2">
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Free Skills Assessment</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Videos</a>                                
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">E-Books</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Blog</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-link" href="#">Newsletter</a>
-                        </li>
-                    </ul>
+                        <nav>
+                            <ul class="dropdown-content" id="dropdown-content2">
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Free Skills Assessment</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Videos</a>                                
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">E-Books</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Blog</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-link" href="#">Newsletter</a>
+                                </li>
+                            </ul>
+                        </nav>
                 </li>
                 <li class="header-nav-content">
                     <a class="header-nav-link header-nav-link-focus" href="#">Events</a>
@@ -66,7 +70,23 @@
                 </li>
             </ul>
         </nav>
-        <button class="header-join-btn" type="button" aria-expanded="false" aria-controls="join-us">Join Us</button>
+        <div class="header-join-btn-cont">
+            <button class="header-join-btn" type="button">Join Us
+                <svg class="header-btn-svg" width="12px" height="8px">
+                    <use href="./img/icons/icons.svg#icon-vector_arrow_down"></use>
+                </svg>
+            </button>
+                <nav class="join-btn-nav">
+                    <ul class="dropdown-content-join">
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-link" href="#">Individual Membership</a>
+                        </li>
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-link" href="#">Team Membership</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
         <button class="header-login-btn" type="button" aria-expanded="false" aria-controls="log-in">Log In</button>
     </div>
 </header>
