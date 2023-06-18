@@ -37,7 +37,7 @@
 
     <!-- ===Store JS=== -->
    
-    <script type="module" crossorigin src="/full-stack-modeller-team-proj-test/assets/index-a229c310.js"></script>
+    <script type="module" crossorigin src="/full-stack-modeller-team-proj-test/assets/index-8bc82595.js"></script>
     <link rel="stylesheet" href="/full-stack-modeller-team-proj-test/assets/index-ada2be0b.css">
   </head>
 
@@ -57,7 +57,7 @@
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-content">
-                    <button onclick="myFunction1()" class="header-nav-link dropbtn1">Training
+                    <button class="header-nav-link dropbtn1" id="dropbtn1">Training
                         <svg class="nav-link-arrow" width="24px" height="24px" >
                             <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_down"></use>
                             <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_up"></use>
@@ -84,7 +84,7 @@
                         </nav>                     
                 </li>
                 <li class="header-nav-content">
-                    <button onclick="myFunction2()" class="header-nav-link dropbtn2">Resources
+                    <button class="header-nav-link dropbtn2" id="dropbtn2">Resources
                         <svg class="nav-link-arrow" width="24px" height="24px" >
                             <use class="icon-arrow-before" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_down"></use>
                             <use class="icon-arrow-after" href="/full-stack-modeller-team-proj-test/assets/icons-bcbc15cc.svg#icon-arrow_drop_up"></use>
@@ -125,7 +125,7 @@
                 </svg>
             </button>
                 <nav class="join-btn-nav">
-                    <ul class="dropdown-content-join" id="join-btn-nav">
+                    <ul class="dropdown-content-join js-dropdown-content">
                         <li class="dropdown-list-item">
                             <a class="dropdown-link" href="#">Individual Membership</a>
                         </li>
@@ -177,7 +177,6 @@
                 </a>
             </li>
         </ul>
-
     </div>
 </section>
 
@@ -761,9 +760,6 @@
       <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
-     
-     <!-- <script type="module" src="/main.js"></script> -->
-
      <!-- SMOOTH SCROLL -->
     
     <script>
@@ -771,42 +767,6 @@
       easing: 'easeInOutQuart',
       });
     </script>
-
-
-      <!-- HEADER NAV MENU -->
-
-
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction1() {
-          document.getElementById("dropdown-content1").classList.toggle("show");
-        }
-      function myFunction2() {
-          document.getElementById("dropdown-content2").classList.toggle("show");
-        }     
-      // Close the dropdown if the user clicks outside of it
-
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn1') && !event.target.matches('.dropdown-content1') 
-          && !event.target.matches('.dropbtn2') && !event.target.matches('.dropdown-content2')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        } else if (event.target.matches('.dropbtn1')) {
-          document.getElementById("dropdown-content2").classList.remove("show");
-        } else if (event.target.matches('.dropbtn2')) {
-          document.getElementById("dropdown-content1").classList.remove("show");
-        }
-      }
-    </script>
-    
-
 
   </body>
 </html>
