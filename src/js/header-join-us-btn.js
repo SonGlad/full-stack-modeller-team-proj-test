@@ -1,20 +1,16 @@
 "use strict";
-(() => {
-const refs = {
-    headerJoinBtnEl: document.querySelector(".header-join-btn"),
-    navJoinBtnEl: document.querySelector("#join-btn-nav"),
-  };
 
-  refs.headerJoinBtnEl.addEventListener("click", toggleNav);
-  document.addEventListener("click", closeNav);
+const headerJoinBtnEl = document.querySelector(".header-join-btn");
+const navDropdownEl = document.querySelector(".js-dropdown-content");
 
-  function toggleNav(event) {
-    event.stopPropagation();
-    refs.navJoinBtnEl.classList.toggle("appear");
-  }
+headerJoinBtnEl.addEventListener('click', toggleNav);
+document.addEventListener('click', closeNav);
 
-  function closeNav() {
-    refs.navJoinBtnEl.classList.remove("appear");
-  }
-})();
+function toggleNav(event){
+  event.stopPropagation();
+  navDropdownEl.classList.toggle("appear");
+};
 
+function closeNav(){
+  navDropdownEl.classList.remove("appear");
+};
